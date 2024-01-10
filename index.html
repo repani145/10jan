@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{translate: 500px;}
+        input:checked~.d1{translate: 68px 50px;
+        transition: all;
+        transition-duration: 5s;
+        }
+        input:checked~.d2{translate: -8px 17px;z-index: 2;
+        transition: all;
+        transition-duration: 5s;}
+        input:checked~.d3{transform: skew(-40deg);translate: 30px -172px;
+        transition: all;
+        transition-duration: 5s;}
+        input:checked~.d4{transform: skew(0deg,-50deg);translate: -9px -238px;
+        transition: all;
+        transition-duration: 5s;}
+        input:checked~.d5{translate: 30px -305px;transform: skew(-40deg);
+        transition: all;
+        transition-duration: 5s;}
+        input:checked~.d6{translate: 92px -472px;transform: skew(0deg,-50deg);
+        transition: all;
+        transition-duration: 5s;}
+    </style>
+</head>
+<body>
+    <input type="radio" class="in"/>CLICK HERE TO FORM CUBE
+    <div class="d1" style="background-color: rgba(5, 198, 5, 0.116); border: 1px black; width: 100px;height: 100px; text-align: center;"><h1>1</h1></div>
+    <div class="d2" style="background-color: rgba(237, 241, 10, 0.242); border: 1px black; width: 100px;height: 100px; text-align: center;"><h1>2</h1></div>
+    <div class="d3" style="background-color: rgba(245, 9, 159, 0.324); width:100px; height: 90px; text-align: center; z-index: 4;"></div>
+    <div class="d4" style="background-color: rgba(237, 19, 19, 0.336);width: 77px;height: 100px; text-align: center; z-index: -1;"><h1>4</h1></div>
+    <div class="d5" style="background-color: rgba(0, 0, 255, 0.208);width: 100px;height: 90px;text-align: center;z-index: -2;"><h1>5</h1></div>
+    <div class="d6" style="background-color: rgba(3, 245, 15, 0.276);width: 77px;height: 100px; text-align: center;"><h1>6</h1></div>
+    
+</body>
+</html>
